@@ -6,6 +6,8 @@ ADD . /bot
 EXPOSE 9999
 WORKDIR /bot
 
+RUN npm install hubot-weather-ja
+
 # default command for "dockerrun"
 CMD ["bin/hubot", "--adapter", "slack"]
 
